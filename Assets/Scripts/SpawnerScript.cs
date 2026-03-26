@@ -21,7 +21,7 @@ public class SpawnerScript: MonoBehaviour
         time += Time.deltaTime;
         if (time >= timeBetweenSpawns)
         {
-            Instantiate(enemy, Vector3.down * 7, Quaternion.identity);
+            Instantiate(enemy, transform.position, Quaternion.identity);
             time = 0;
         }
     }
