@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
             // Subtract the time passed since the last frame
             timeRemaining -= Time.deltaTime;
             
-            timerText.text = Mathf.CeilToInt(timeRemaining).ToString(); 
+            timerText.text = $"00:{timeRemaining:00}"; 
         }
         else
         {

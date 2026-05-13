@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,7 @@ public class PlayerScript : MonoBehaviour
     
     public int direction = 1; // left/right direction
     public int speed = 3; // player speed (left/right)
+    public float maxFallSpeed = 10;
     
     // Update is called once per frame
     void Update()
@@ -17,5 +19,11 @@ public class PlayerScript : MonoBehaviour
         }
         
         myRigidbody.linearVelocityX = speed * direction;
+    }
+
+    private void FixedUpdate()
+    {
+        Debug.Log(myRigidbody.linearVelocityY);
+        myRigidbody.linearVelocityY = Mathf.Max(myRigidbody.linearVelocityY, maxFallSpeed);
     }
 }
