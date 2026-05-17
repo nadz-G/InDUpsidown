@@ -8,7 +8,10 @@ public class PlayerHealth : MonoBehaviour
 
     [Header("UI Hearts")]
     public Image[] hearts;
-
+    
+    public float invincibilityTime = 2f;
+    private float invincibleUntil = -1;
+    
     void Start()
     {
         health = maxHealth;
@@ -16,14 +19,19 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
+        if (Time.time < invincibleUntil)
+        {
+            return; // no damage - invincible
+        }
+        
         health -= damage;
         
         UpdateHeartsUI();
+        invincibleUntil = Time.time + invincibilityTime;
 
         if (health <= 0)
         {
             Destroy(gameObject);
-            Debug.Log("Player Destroyed!");
         }
     }
 
