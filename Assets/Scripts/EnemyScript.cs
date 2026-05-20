@@ -1,16 +1,14 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class EnemyScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
-    public float frequency = 1f; // how quickly it changes direction
-    public float direction = 7; // distance to left/right 
+    public float frequency = 1f;  // turn direction speed 
+    public float distance = 7f;   // How far left/right it goes
+    public float speed = 2f;      // speed
 
-
-    // Update is called once per frame
     void Update()
     {
-        myRigidbody.linearVelocityX = Mathf.Sin(Time.time * frequency) * direction;
+        myRigidbody.linearVelocityX = Mathf.Sin(Time.time * frequency) * distance * speed;
     }
 }
