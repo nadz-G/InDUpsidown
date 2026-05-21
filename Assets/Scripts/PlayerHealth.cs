@@ -3,9 +3,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 3;
-    public int health;
-
+    //public int maxHealth = 3;
+    public int health = 3;
     [Header("UI Hearts")]
     public Image[] hearts;
     
@@ -14,8 +13,8 @@ public class PlayerHealth : MonoBehaviour
     
     void Start()
     {
-        health = maxHealth;
         UpdateHeartsUI();
+        Debug.Log(health);
     }
     public void TakeDamage(int damage)
     {
@@ -25,7 +24,6 @@ public class PlayerHealth : MonoBehaviour
         }
         
         health -= damage;
-        
         UpdateHeartsUI();
         invincibleUntil = Time.time + invincibilityTime;
 
@@ -53,11 +51,14 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
+    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Debug.Log(health);
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("I have been hit"); //trying to see if the collision is working
             TakeDamage(1);
         }
-    }
+    }*/
 }

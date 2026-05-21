@@ -23,7 +23,7 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(myRigidbody.linearVelocityY);
+        //Debug.Log(myRigidbody.linearVelocityY);
         myRigidbody.linearVelocityY = Mathf.Max(myRigidbody.linearVelocityY, maxFallSpeed);
     }
 }

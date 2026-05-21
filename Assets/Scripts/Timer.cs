@@ -28,8 +28,6 @@ public class Timer : MonoBehaviour
 
     void TriggerGameOver()
     {
-         gameOverPanel.SetActive(true); 
-         Time.timeScale = 0f; 
-        Debug.Log("Time's Up!");
+        SceneManager.LoadScene("GameOver");
     }
 }
