@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bug anim
+  m_Name: orange
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -855298285791758126, guid: 7defdb3ce284aef47bf6d2f28e0f50ae, type: 3}
+      value: {fileID: 3145279068036565379, guid: 751509c772ec588498cba1222c21ccee, type: 3}
     - time: 0.083333336
-      value: {fileID: -6470460504253458178, guid: a2a6742b32a5dc641972753240636cec, type: 3}
+      value: {fileID: 4833726433890900450, guid: d7115bb4ce24414478dfe252c34e4926, type: 3}
     - time: 0.16666667
-      value: {fileID: -4178046375966092550, guid: 757557fa7761c974181ab71b682c88c9, type: 3}
+      value: {fileID: 8912224320411988505, guid: a6d33e465e6511849997a5a87dc68075, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,9 +48,9 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -855298285791758126, guid: 7defdb3ce284aef47bf6d2f28e0f50ae, type: 3}
-    - {fileID: -6470460504253458178, guid: a2a6742b32a5dc641972753240636cec, type: 3}
-    - {fileID: -4178046375966092550, guid: 757557fa7761c974181ab71b682c88c9, type: 3}
+    - {fileID: 3145279068036565379, guid: 751509c772ec588498cba1222c21ccee, type: 3}
+    - {fileID: 4833726433890900450, guid: d7115bb4ce24414478dfe252c34e4926, type: 3}
+    - {fileID: 8912224320411988505, guid: a6d33e465e6511849997a5a87dc68075, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
